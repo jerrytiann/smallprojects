@@ -6,8 +6,9 @@ const navSlide = () => {
 
     mobile_nav.addEventListener('click', () => {
         //Toggle Nav
-        nav.classList.toggle('nav-active');
+        nav.classList.toggle('nav-menu-active');
 
+        mobile_nav.classList.toggle('nav-menu-toggle');
 
         //Animate links
         navLinks.forEach((link, index) => {
