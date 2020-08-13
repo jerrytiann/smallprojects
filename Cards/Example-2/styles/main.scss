@@ -12,13 +12,10 @@
 
 
 
-
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    color: black;
-    background-color: white;
 }
 
 /* Scroll bar */
@@ -35,3 +32,12 @@ body::-webkit-scrollbar-thumb {
     background: #6649b8;
 }
 
+body {
+    background-color: dcf5ff;
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-family: 'Poppins', 'sans-serif';
+}

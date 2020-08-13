@@ -13,8 +13,6 @@
   padding: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  color: black;
-  background-color: white;
 }
 
 /* Scroll bar */
@@ -28,5 +26,18 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   background: #6649b8;
+}
+
+body {
+  background-color: dcf5ff;
+  margin: 0;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Poppins', 'sans-serif';
 }
 /*# sourceMappingURL=main.css.map */
