@@ -1,18 +1,7 @@
 /* https://coolors.co/1f4068-434371-a9def9-70ee9c-b5f44a */
-:root {
-  font-size: 16px;
-  font-family: 'Raleway';
-  --text-primary: #b6b6b6;
-  --text-secondary: #ececec;
-  --bg-primary: #23232e;
-  --bg-secondary: #141418;
-}
-
 * {
   margin: 0px;
   padding: 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 /* Scroll bar */
@@ -39,5 +28,47 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-family: 'Poppins', 'sans-serif';
+}
+
+.inner {
+  background: #07daa5;
+  padding: 1em;
+  border-radius: 10px;
+  width: 250px;
+  -webkit-clip-path: circle(10% at 90% 12%);
+          clip-path: circle(10% at 90% 12%);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  cursor: pointer;
+}
+
+.inner:hover {
+  -webkit-clip-path: circle(75%);
+          clip-path: circle(75%);
+  background: #00b6ff;
+}
+
+.inner span {
+  float: right;
+  color: white;
+  font-weight: bold;
+  -webkit-transition: color .5s;
+  transition: color .5s;
+  position: relative;
+  margin-right: 4%;
+}
+
+.inner:hover span {
+  color: rgba(255, 255, 255, 0);
+}
+
+.inner h1 {
+  color: white;
+  margin: 0;
+}
+
+.inner p {
+  color: white;
+  margin: .8rem;
 }
 /*# sourceMappingURL=main.css.map */
