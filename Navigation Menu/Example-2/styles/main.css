@@ -1,0 +1,170 @@
+/* https://coolors.co/1f4068-434371-a9def9-70ee9c-b5f44a */
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* --------------------------Navigation menu-------------------------------*/
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 8vh;
+  background: #1F4068;
+  font-family: 'Poppins', sans-serif;
+  color: #A9DEF9;
+}
+
+nav li {
+  padding: 0px 20px;
+}
+
+.logo {
+  cursor: pointer;
+  padding: 10px 0;
+}
+
+.nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40%;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.mobile-nav div {
+  width: 35px;
+  height: 4px;
+  background-color: white;
+  margin: 5px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.btn-resume {
+  background: #1F4068;
+  padding: 6px 10px;
+  border-radius: 8px;
+  border-color: #70ee9c;
+  border-width: medium;
+  border-style: solid;
+}
+
+.btn-resume:hover {
+  background: #70ee9c;
+  color: #1F4068;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #1F4068;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 42%;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+    transition: -webkit-transform 0.5s ease-in;
+    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .mobile-nav {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.nav-menu-active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+@-webkit-keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+.nav-menu-toggle .line-1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 7px);
+          transform: rotate(-45deg) translate(-6px, 7px);
+}
+
+.nav-menu-toggle .line-2 {
+  opacity: 0;
+}
+
+.nav-menu-toggle .line-3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -7px);
+          transform: rotate(45deg) translate(-6px, -7px);
+}
+
+/* --------------------------Landing section--------------------------------*/
+/*# sourceMappingURL=main.css.map */
