@@ -6,6 +6,7 @@
           box-sizing: border-box;
 }
 
+/* --------------------------Navigation menu-------------------------------*/
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -21,21 +22,13 @@ nav {
   color: #A9DEF9;
 }
 
+nav li {
+  padding: 0px 20px;
+}
+
 .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  font-size: 22px;
-  width: 20%;
+  cursor: pointer;
+  padding: 10px 0;
 }
 
 .nav-links {
@@ -53,7 +46,7 @@ nav {
 .nav-links a {
   text-decoration: none;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 2px;
   color: white;
 }
@@ -73,6 +66,11 @@ nav {
   margin: 5px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+}
+
+.btn-resume {
+  border: none;
+  padding: 9px 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -110,6 +108,15 @@ nav {
     display: block;
     cursor: pointer;
   }
+}
+
+.btn-resume {
+  background: #1F4068;
+  padding: 6px 10px;
+  border-radius: 8px;
+  border-color: #70ee9c;
+  border-width: medium;
+  border-style: solid;
 }
 
 .nav-menu-active {
@@ -156,4 +163,6 @@ nav {
   -webkit-transform: rotate(45deg) translate(-6px, -7px);
           transform: rotate(45deg) translate(-6px, -7px);
 }
+
+/* --------------------------Landing section--------------------------------*/
 /*# sourceMappingURL=main.css.map */
