@@ -30,25 +30,36 @@ body {
   font-family: 'Poppins', 'sans-serif';
 }
 
-.inner {
-  background: #07daa5;
-  padding: 1em;
+.container {
+  background: white;
+  height: 30vh;
+  width: 60%;
   border-radius: 10px;
-  width: 250px;
-  -webkit-clip-path: circle(10% at 90% 12%);
-          clip-path: circle(10% at 90% 12%);
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+}
+
+.container .inner {
+  float: right;
+  background: #07daa5;
+  padding: 0 1rem;
+  border-radius: 5px;
+  height: 100%;
+  width: 20%;
+  -webkit-clip-path: circle(5% at 50% 90%);
+          clip-path: circle(5% at 50% 90%);
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
   cursor: pointer;
 }
 
-.inner:hover {
-  -webkit-clip-path: circle(75%);
-          clip-path: circle(75%);
+.container .inner:hover {
+  -webkit-clip-path: circle(99.7% at 100% 100%);
+          clip-path: circle(99.7% at 100% 100%);
   background: #00b6ff;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
-.inner span {
+.container .inner span {
   float: right;
   color: white;
   font-weight: bold;
@@ -58,16 +69,16 @@ body {
   margin-right: 4%;
 }
 
-.inner:hover span {
+.container .inner:hover span {
   color: rgba(255, 255, 255, 0);
 }
 
-.inner h1 {
+.container .inner h1 {
   color: white;
   margin: 0;
 }
 
-.inner p {
+.container .inner p {
   color: white;
   margin: .8rem;
 }

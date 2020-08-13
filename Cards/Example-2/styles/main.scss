@@ -32,41 +32,56 @@ body {
 }
 
 
-
-.inner {
-    background: rgb(7, 218, 165);
-    padding: 1em;
+.container{
+    background: white;
+    height: 30vh;
+    width: 60%;
     border-radius: 10px;
-    width: 250px;
-    clip-path: circle(10% at 90% 12%);
-    transition: all .5s ease-in-out;
-    cursor: pointer;
+    
 
-    &:hover {
-        clip-path: circle(75%);
-        background: #00b6ff;
-    }
-    span {
+    .inner {
         float: right;
-        color: white;
-        font-weight: bold;
-        transition: color .5s;
-        position: relative;
-        margin-right: 4%;
-    }
+        background: rgb(7, 218, 165);
+        padding: 0 1rem;
+        border-radius: 5px;
+        height: 100%;
+        width: 20%;
+        clip-path: circle(5% at 50% 90%);
+        transition: all .3s ease-in-out;
+        cursor: pointer;
 
-    &:hover span {
-        color: rgba(255,255,255,0)
-    }
+        &:hover {
+            clip-path: circle(99.7% at 100% 100%);
+            background: #00b6ff;
+            transition: all .3s ease-in-out;
+        }
+    
 
-    h1 {
-        color: white;
-        margin: 0;
+        span {
+            float: right;
+            color: white;
+            font-weight: bold;
+            transition: color .5s;
+            position: relative;
+            margin-right: 4%;
+        }
+    
+        &:hover span {
+            color: rgba(255,255,255,0)
+        }
+    
+        h1 {
+            color: white;
+            margin: 0;
+        }
+    
+        p {
+            color: white;
+            margin: .8rem;
+        }
     }
+    
 
-    p {
-        color: white;
-        margin: .8rem;
-    }
+
 }
 
