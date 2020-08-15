@@ -1,5 +1,6 @@
 /* https://coolors.co/1f4068-434371-a9def9-70ee9c-b5f44a */
 @import 'functions';
+@import 'stars';
 
 
 * {
@@ -26,4 +27,18 @@
     text-transform: uppercase;
     letter-spacing: 10px;
     margin-top: -2%;
+}
+
+#title span {
+    background: -webkit-linear-gradient(white, #38495a);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+#stars1 {
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    animation: animateStar 50s linear infinite;
+    @include stars1;
 }
