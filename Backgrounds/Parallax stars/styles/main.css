@@ -38,7 +38,7 @@
 #stars1:after {
   content: '';
   position: absolute;
-  top: 1000px;
+  top: -1000px;
   width: 1px;
   height: 1px;
   background: transparent;
@@ -59,7 +59,7 @@
 #stars2:after {
   content: '';
   position: absolute;
-  top: 1000px;
+  top: -1000px;
   width: 2px;
   height: 2px;
   background: transparent;
@@ -80,7 +80,7 @@
 #stars3:after {
   content: '';
   position: absolute;
-  top: 1000px;
+  top: -1000px;
   width: 3px;
   height: 3px;
   background: transparent;
@@ -94,8 +94,8 @@
             transform: translateY(0px);
   }
   to {
-    -webkit-transform: translateY(-1000px);
-            transform: translateY(-1000px);
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
   }
 }
 
@@ -105,8 +105,8 @@
             transform: translateY(0px);
   }
   to {
-    -webkit-transform: translateY(-1000px);
-            transform: translateY(-1000px);
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
   }
 }
 
