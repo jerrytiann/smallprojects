@@ -7,4 +7,23 @@
     padding: 0px;
 }
 
+.wrapper {
+    height: 100vh;
+    overflow: hidden;
+    background: radial-gradient(ellipse at bottom, #1b2735 5%, #090a0f 100%);
+}
 
+#title {
+    color: white;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 0;
+    right: 0;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin-top: -2%;
+}
