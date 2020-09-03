@@ -1,0 +1,52 @@
+/* Margin - 5% left and right*/
+
+@mixin margin5{
+    width: 90%;
+    margin: auto;
+}
+
+
+/* Display - flex various justify-content */
+@mixin flexSpaceAround{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin flexSpaceEvenly{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@mixin flexSpaceBetween{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Font */
+
+@mixin ralewayRegular{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+@mixin ralewayBold{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+
+@mixin ralewayLight{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+
